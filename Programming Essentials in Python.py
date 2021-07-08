@@ -1,4 +1,4 @@
-# Module 1
+# Module 1 of PEP
 
 # print ("Hisssss...")
 
@@ -103,13 +103,109 @@
 
 # guess = int(input("Enter your guess to escape my loop, muggle!: ")) # user inputs their guess
 # while guess != secret_number: # while the guess isn't equivalent to the secret number
-#     if guess != secret_number: # if the the guess ins't equivalent to the secret number
+#     if guess != secret_number: # if the the guess isn't equivalent to the secret number
 #         print("Ha ha! You're stuck in my loop!") # print this message
 #     guess = int(input("Enter your guess to escape my loop, muggle!: ")) # user has to try again and input another guess
 #     
 # if guess == secret_number: # if the user inputs a guess equivalent to the secret number # this also ends the while loop
 #     print("Well done, muggle! You are free now.") # print this message
 
-for i in range(2, 8):
-    print("The value of i is currently", i)
+
+
+# A for loop program to count "mississippily" to five using the time module.
+# import time # For timed output to the console.
+#
+# for count in range(1, 6): # A for loop that counts to five.
+#     print(count,"Mississippi") # print the loop iteration number and the word "Mississippi".
+#     time.sleep(1) # use: time.sleep(1) to time output to console to 1 second
+#
+# print("Ready or not, here I come!") # print the final message.
+
+
+
+# A program that uses a while loop and continuously asks user to enter a word until the secret exit word is entered
+# secret_exit_word = "chupacabra" # defining the secret exit word
+# guess = input("Can you guess the secret exit word to escape the loop?: ") # user inputs guess
+#
+# while guess != secret_exit_word: # while guess is incorrect
+#     guess = input("Incorrect. Guess again!: ") # user gets incorrcet message and guesses again
+#     if guess == secret_exit_word: # if user guesses correctly
+#         break # break
+#
+# print("You've successfully left the loop.") # print success message
+
+# the ugly vowel eater game
+# user inputs a word and program prints the word vertically, without the vowels
+# user_word = input("Enter a word and watch it's vowels disappear!: ") # Prompt the user to enter a word
+# user_word = user_word.upper()# and assign it to the user_word variable.
+# vowel_eaten_word = ""
+#
+# for letter in user_word:
+#     if letter == "A":
+#         continue
+#     elif letter == "E":
+#         continue
+#     elif letter == "I":
+#         continue
+#     elif letter == "O":
+#         continue
+#     elif letter == "U":
+#         continue
+#     else:
+#         vowel_eaten_word += letter
+#
+# for i in vowel_eaten_word:
+#     print(i)
+
+
+
+# program to read inputted number of blocks and calculate height of pyramid that can be made
+# each lower layer of the pyramid contains one block more than the layer above
+# blocks = int(input("Enter the number of blocks: "))
+# height = 0
+# layers = 1
+#
+# while layers <= blocks:
+#     height += 1
+#     blocks -= layers
+#     layers += 1
+#
+# print("The height of the pyramid:", height)
+
+
+
+# program to test Collatz' hypothesis against user input
+# program reads one natural number and executes below step as long as c0 is different from 1
+# take any non-negative and non-zero integer number and name it c0;
+# if it's even, evaluate a new c0 as c0 ÷ 2;
+# otherwise, if it's odd, evaluate a new c0 as 3 × c0 + 1;
+# if c0 ≠ 1, skip to point 2.
+# c0 = int(input("Enter a number: "))
+# steps = 0
+#
+# while c0 != 1:
+#     if c0 % 2 == 0:
+#         c0 /= 2
+#     elif c0 % 2 == 1:
+#         c0 = 3 * c0 + 1
+#     steps += 1
+#     print(int(c0))
+#
+# print("steps =", steps)
+
+
+
+# # program to manipulate indexed items in a list
+# hat_list = [1, 2, 3, 4, 5]  # This is an existing list of numbers hidden in the hat.
+# print("\n",hat_list)
+# guess = int(input("Replace the middle number with: ")) # Step 1: write a line of code that prompts the user
+# hat_list[2] = guess # to replace the middle number with an integer number entered by the user.
+# print(hat_list)
+# del hat_list[-1]# Step 2: write a line of code that removes the last element from the list.
+# print(hat_list)
+# print(len(hat_list))# Step 3: write a line of code that prints the length of the existing list.
+#
+# print(hat_list)
+
+
 
